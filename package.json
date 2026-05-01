@@ -1,0 +1,11 @@
+{
+  "name": "typescript-demo-pantallano",
+  "version": "1.0.0",
+  "description": "TypeScript demo project",
+  "scripts": {
+    "build": "tsc"
+  },
+  "devDependencies": {
+    "typescript": "^5.0.0"
+  }
+}
