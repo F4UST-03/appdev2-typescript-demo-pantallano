@@ -47,3 +47,21 @@ Covers arrays with union types, object typing with nested properties, and the `R
 
 ## 05-enum.ts
 Introduces enums, specifically string enums, and shows how to assign `enum` values properly.
+
+## 06-alternative-to-enum.ts
+Demonstrates replacing `enum` with **literal union types** (e.g. `'admin' | 'guest' | ...'`). It is to show that TypeScript can restrict valid values without creating an enum object, while still giving strong type safety.
+
+## 07-custom-type-role.ts
+Shows how to create reusable domain types using `type` aliases. This file is to build a `Role` union and a structured `User` type so the compiler enforces consistent shapes and allowed role values.
+
+## 08-functions.ts
+Covers function typing and special return types (`void`, `never`), plus using function types for callbacks and methods. This file is to demonstrate how TypeScript validates parameters/returns and models “functions as types”.
+
+## 09-special-types.ts
+Demonstrates TypeScript’s special literal types `null` and `undefined`. Its purpose is to show how these values must be explicitly typed (or included via unions), and how union types affect what you can assign.
+
+## 10-form.html and 10-type-narrowing.ts
+A small HTML form plus the TypeScript code for safe DOM access. Its purpose is to explain that `document.getElementById(...)` can return `null`, and show approaches like non-null assertion (`!`), runtime checks, and optional chaining (`?.`) to narrow types safely.
+
+## 11-optional.ts
+Demonstrates **optional values** in parameters and object properties, and the difference between `||` and `??` (fallback on any falsy vs fallback only on `null`/`undefined`). Its purpose is to teach how to write safer code when values may be missing.
